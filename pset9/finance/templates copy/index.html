@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+
+<table>
+    <caption>Wallet</caption>
+    <thead>
+        <tr>
+            <th scope="col">Ticker</th>
+            <th scope="col">Name</th>
+            <th scope="col">Shares</th>
+            <th scope="col">Price</th>
+            <th scope="col">Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in rows %}
+        <tr>
+            <td>{{ row["symbol"] }}</td>
+            <td>{{ row["companyName"] }}</td>
+            <td>{{ row["shares"] }}</td>
+            <td>{{ row["price"] }}</td>
+            <td>{{ row["total"] }}</td>
+        </tr>
+        {% endfor %}
+        <tr>
+            <td class="Transparent"></td>
+            <td class="Transparent"></td>
+            <td class="Transparent"></td>
+            <td class="Final">Total</td>
+            <td class="Final">{{ total }}</td>
+        </tr>
+        <tr c>
+            <td class="Transparent"></td>
+            <td class="Transparent"></td>
+            <td class="Transparent"></td>
+            <td class="Final">Cash</td>
+            <td class="Final">{{ cash }}</td>
+        </tr>
+    </tbody>
+</table>
+
+{% endblock %}

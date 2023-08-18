@@ -1,0 +1,92 @@
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+main .form-control
+{
+    /* Center form controls */
+    display: inline-block;
+
+    /* Override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+    /* Scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* Center contents */
+    text-align: center;
+}
+
+main img
+{
+    /* Constrain images on small screens */
+    max-width: 100%;
+}
+
+body
+{
+    color: #F5E8D5;
+    background-color: #211636;
+}
+
+table
+{
+    width: 100%;
+    color: #211636;
+    font-weight: bold;
+    background-color: #DEFFE9;
+}
+
+thead
+{
+    color: #211636;
+    background-color: #97A89D;
+}
+
+.Final
+{
+    color: #211636;
+    background-color: #97A89D;
+}
+
+.Transparent
+{
+    background-color: #211636;
+}
+
+.form-group
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+input
+{
+    padding: 10px;
+    margin: 5px;
+    width: 40%;
+}
